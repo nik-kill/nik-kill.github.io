@@ -1,3 +1,9 @@
+body {
+  background-color:silver;
+  color: white;
+  overflow-x:hidden;
+}
+
 /* MENU ANIMATION */
 .openbtn {
   cursor: pointer;
@@ -119,3 +125,5 @@
 .project_items:hover .overlay {
   opacity: 1;
 }
+
+
