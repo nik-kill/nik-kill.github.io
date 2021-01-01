@@ -24,7 +24,3 @@ function displayH1(pos){
     document.getElementById("welcome_text").innerHTML = pos;
 }
 
-
-//Canvas 
-
-
