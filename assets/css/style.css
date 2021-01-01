@@ -153,17 +153,19 @@ html, body {
 
 .project_image {
   border: solid;
-  width: 50%;
+  height: 300px;
+  width: auto;
 }
 
 .project_content {
   border: solid;
   background: rgba(0, 0, 0, 0.75); /* Black see-through */
   color: white;
-  font-size: 15px;
+  font-size: 13px;
   padding: 15px;
   text-align: center;
-  width:30%;
+  width:auto;
+  height:300px;
   position:absolute;
   left: 60%;
   bottom:60px;
