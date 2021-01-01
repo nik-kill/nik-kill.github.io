@@ -6,33 +6,34 @@
     <script src="assets/js/script.js"></script>
 </head>
 <body onload="typeWriter()" text="white">
+    <canvas id="canvas" class="canvas"></canvas>
     <div id="main">
+        <div class="container">
+            <div class="blackhole">
+                <div class="megna">
+                    <div class="black"></div>
+                </div>
+            </div>
+        </div>
+
         <div id="home">
-        </br></br></br></br>
             <img src="assets/icons/Incognito.png" height="279px" width="512px" style="float: left;">
-            <br><br><br><br>
                 <h2>hi! I'm Nikhil.</h2>
-    
-
-
-        
         </div>
         <div id="about">
-        </br></br></br></br>
-        </br></br></br></br>
-        <h4>About</h4>
+        <h3>About</h3>
             <p>
                 I am a 2nd Year Undergrad at Indian Institute of Engineering Science and Technology, Shibpur in the Department of
                 Information Technology.
             </p>
         </div>
         <div id="projects">
-        </br></br></br></br>
-        <h4>Projects</h4>
-            <div class="project_items">
+        <h3>Projects</h3>
+            <div class="blockchain">
+                <h1 class="project_head">Blockchain</h1>
                 <img src="assets/icons/blockchain.jpg" class="project_image">
-                <div class="overlay">
-                    <h1>Blockchain</h1>
+                
+                <div class="project_content">
                     <p>
                         This project was part of a Hackathon organised by "GlobalShala" and hosted by "Hackerearth",
                         in which we created a prototype under the theme "Blockchain". We qualified the idea submission 
@@ -48,27 +49,23 @@
                     </p>
                 </div>
             </div>
-        </br></br></br></br>
         </div>
         <div id="contact">
-        </br></br></br></br>
-        <h4>We could work on something...</h4>
+        <h3>Ping me @</h3>
             <a href="https://github.com/nik-kill"><h3><img src="assets/icons/github.jpg" height="46px" width="115px"></h3></a>
             <a href="https://www.linkedin.com/in/nik-kill/"><h3><img src="assets/icons/linkedin.png" height="50px" width="50px"></h3></a>
             <a href="https://www.hackerrank.com/nikhil062000">
                 <h3><img src="assets/icons/hackerrank.jpg" height="50px" width="50px"></h3>
             </a>
             
-        </br></br></br></br>
         </div>
         <div id="hobbies">
-            <h4>or We could play..</h4>
+            <h3>or @</h3>
             <p>
             <h3>Football</h3>
             <a href="https://www.chess.com/member/nikkkss"><h3>Chess</h3></a>
             <h3>CS-GO</h3>
             </p>
-            </br></br></br></br>
         </div>
     </div>
     <div class="openbtn" onclick="menuAnimate(this)">
@@ -87,6 +84,7 @@
                 width="50px"></a>
     </div>
     <h1 id="welcome_text"></h1>
+        
     
 </body>
 </html>
