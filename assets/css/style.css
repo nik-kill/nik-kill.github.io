@@ -149,6 +149,7 @@ html, body {
 .blockchain {
   padding:50px;
   position: relative;
+  display: flex;
 }
 .project_head {  
   width: 50%;
@@ -169,7 +170,6 @@ html, body {
   text-align: center;
   width:auto;
   height:300px;
-  position:absolute;
   left: 60%;
   bottom:60px;
 }
