@@ -1,4 +1,3 @@
-
 * {
   margin: 2px;
 }
@@ -26,7 +25,6 @@ html, body {
 #canvas{
   position:fixed;
   margin: 0px;
-  border: solid;
   width: 100%;
   height:100%;
 }
@@ -71,15 +69,16 @@ html, body {
 
 /* SIDE PANEL*/
 .sidepanel {
-    margin-top: 60px;
-  height: 100%; 
+  margin-top: 60px;
+  height: 60%; 
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed;
   z-index: 1;
   left: 1;
   background-color: rgb(229, 229, 238);
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   transition: 0.5s;
   overflow: hidden;
   opacity: 40%;
@@ -114,31 +113,32 @@ html, body {
     position: absolute;
     top: 10%;
     left: 70px;
-    width: 95%;
+    right:70px;
+    width: 85%;
 }
 
 #home{
-  position: relative;
   padding:100px;
+  display: flex;
+  justify-content: center;
 }
 
 #about{
-  position: relative;
   padding:100px;
 }
 
 #projects{
-  position: relative;
+  position:relative;
   padding:100px;
 }
 
 #contact{
-  position: relative;
+  position:relative;
   padding:100px;
 }
 
 #hobbies{
-  position: relative;
+  position:relative;
   padding:100px;
 }
 
@@ -148,38 +148,31 @@ html, body {
 
 .blockchain {
   padding:50px;
-  position: relative;
-  display: flex;
 }
 .project_head {  
-  width: 50%;
+  border-bottom: solid;
 }
 
 .project_image {
-  border: solid;
-  height: 300px;
-  width: auto;
+  border:dotted;
+  width: 50%;
 }
 
 .project_content {
-  border: solid;
-  background: rgba(0, 0, 0, 0.75); /* Black see-through */
+  background: rgba(0, 0, 0, 0.50); /* Black see-through */
   color: white;
-  font-size: 13px;
+  font-size:medium;
   padding: 15px;
   text-align: center;
-  width:auto;
-  height:300px;
-  left: 60%;
-  bottom:60px;
+  
 }
 
-
+/* 
 *,
 ::before,
 ::after {
   box-sizing: border-box;
-}
+} */
 .container {
   position:fixed;
   height: 100%;
@@ -223,4 +216,3 @@ html, body {
     transform: rotate(360deg);
   }
 }
-
