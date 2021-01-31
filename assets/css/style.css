@@ -75,7 +75,7 @@ html, body {
   position: fixed;
   z-index: 1;
   left: 1;
-  background-color: rgb(229, 229, 238);
+  background-color: rgb(229, 229, 238,.00);
   overflow-x: hidden;
   padding-top: 30px;
   padding-bottom: 30px;
