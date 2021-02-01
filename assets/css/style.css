@@ -35,11 +35,9 @@ html, body {
   cursor: pointer;
   background-color: #111;
   padding: 10px 15px;
-  border: none;
   left: 1;
   right: 1;
   top: 1;
-  width: 100%;
   position: fixed;
 }
 .openbtn:hover {
@@ -99,12 +97,27 @@ html, body {
 
 #welcome_text {
     position: fixed;
-    top: 3px;
-    width: 100%;
+    left: 40%;
+    overflow: hidden;
+}
+
+.top-bar{
+  position: fixed;
     height: 60px;
     text-align: center;
-    left: 50px;
+    left: 70px;
+    right: 70px;
     overflow: hidden;
+    background-color: #111;
+}
+
+#resume{
+  position: absolute;
+  right: 5px;
+  bottom: 0px;
+  font-size: 35px;
+  height: 55px;
+  color: #818181;
 }
 
 
