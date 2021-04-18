@@ -1,5 +1,6 @@
 * {
   margin: 2px;
+  
 }
 
 
@@ -131,12 +132,21 @@ html, body {
 
 #home{
   padding:100px;
+  justify-content: center;
+}
+#intro{
   display: flex;
   justify-content: center;
 }
 
 #about{
   padding:100px;
+}
+
+.quote{
+  padding: 15px;
+  text-align: right;
+
 }
 
 .aim_button {
