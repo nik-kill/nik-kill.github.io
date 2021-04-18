@@ -100,6 +100,9 @@ html, body {
     position: fixed;
     left: 40%;
     overflow: hidden;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 50;
+    font-size:large
 }
 
 .top-bar{
