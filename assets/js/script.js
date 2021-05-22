@@ -2,9 +2,20 @@ function menuAnimate(x) {
     x.classList.toggle("change");
     var side =  document.getElementById("mySidepanel");
     if(side.style.width=="60px"){
-        side.style.width = "0";
+        side.style.width = "0px";
     }
     else{
+        side.style.width = "60px";
+    }
+}
+
+function menuAnimateRight(x) {
+    x.classList.toggle("change");
+    var side = document.getElementById("mySidepanelRight");
+    if (side.style.width == "60px") {
+        side.style.width = "0px";
+    }
+    else {
         side.style.width = "60px";
     }
 }

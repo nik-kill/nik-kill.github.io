@@ -41,6 +41,34 @@ html, body {
   position: fixed;
 }
 
+.sidepanelRight {
+  margin-top: 60px;
+  height: 100%; 
+  width: 0px; /* 0 width - change this with JavaScript */
+  position: fixed;
+  z-index: 1;
+  right: 1px;
+  background-color: rgb(229, 229, 238,.00);
+  overflow-x: hidden;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: 0.5s;
+  overflow: hidden;
+  opacity: 40%;
+}
+.sidepanelRight a {
+  text-decoration: none;
+  padding-top: 50px;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  padding-left: 2px;
+}
+.sidepanelRight a:hover {
+    background-color: #a78181;
+}
+
 .openbtn {
   cursor: pointer;
   background-color: #111;
