@@ -247,3 +247,10 @@ html, body {
   text-align: center;
   
 }
+
+
+.contactLinks {
+  display: flex;
+  justify-content:space-around;
+  
+}
