@@ -1,5 +1,5 @@
 * {
-  margin: 2px;
+  margin: 1px;
   
 }
 
@@ -205,12 +205,14 @@ html, body {
   
 }
 
+
+
+
 /* 
-*,
 ::before,
 ::after {
   box-sizing: border-box;
-} */
+} 
 .container {
   position:fixed;
   height: 100%;
@@ -223,7 +225,6 @@ html, body {
 .blackhole {
   width: 1em;
   height: 1em;
-  /* background-color: red; */
 }
 
 .blackhole .megna {
@@ -231,9 +232,7 @@ html, body {
   height: 100%;
   border-radius: 100%;
   background: linear-gradient(#e9e3e1, #815443, #33312d);
-  /* box-shadow: 0 0 60px 30px rgba(255, 175, 83, 0.7); */
-  box-shadow: 0 0 60px 30px #9b9996, /* inner white */ 0 0 100px 60px #fd7a4d,
-    /* middle magenta */ 0 0 140px 90px #613144; /* outer cyan */
+  box-shadow: 0 0 60px 30px #9b9996, 0 0 100px 60px #fd7a4d,0 0 140px 90px #613144; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,4 +252,4 @@ html, body {
   100% {
     transform: rotate(360deg);
   }
-}
+}  */
