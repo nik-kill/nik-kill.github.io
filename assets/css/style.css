@@ -32,13 +32,21 @@ html, body {
 
 
 /* MENU ANIMATION */
+.openbtnRight {
+  cursor: pointer;
+  background-color: #111;
+  padding: 10px 15px;
+  top:1px;
+  right:1px;
+  position: fixed;
+}
+
 .openbtn {
   cursor: pointer;
   background-color: #111;
   padding: 10px 15px;
-  left: 1;
-  right: 1;
-  top: 1;
+  left: 1px;
+  top: 1px;
   position: fixed;
 }
 .openbtn:hover {
