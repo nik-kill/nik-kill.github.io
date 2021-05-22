@@ -10,7 +10,7 @@ function menuAnimate(x) {
 }
 
 var i = 0;
-var txt = "Heyy! I hope you find what you're looking for.";
+var txt = "Heyy there!";
 var speed = 100; /* The speed/duration of the effect in milliseconds */
 function typeWriter() {
     if (i < txt.length) {

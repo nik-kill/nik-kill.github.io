@@ -126,7 +126,7 @@ html, body {
 
 
 #main {
-    border: solid;
+    /* border: solid; */
     position: absolute;
     top: 10%;
     left: 70px;
