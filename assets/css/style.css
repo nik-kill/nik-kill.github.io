@@ -184,6 +184,9 @@ html, body {
   display: flex;
   justify-content: center;
 }
+.skills {
+  width: 50%;
+}
 
 #about{
   padding:100px;
