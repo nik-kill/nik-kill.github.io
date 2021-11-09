@@ -13,12 +13,31 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191d1e', endColorstr='#283139',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	background-attachment: fixed;
 }
+#top-bar_text {
+    position: fixed;
+    left: 40%;
+    overflow: hidden;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 50;
+    font-size:large
+}
+
+.top-bar{
+    position: fixed;
+    height: 60px;
+    text-align: center;
+    left: 70px;
+    right: 70px;
+    overflow: hidden;
+    background-color: #111;
+}
 
 #projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 50px;
+    
 }
 
 .project {
