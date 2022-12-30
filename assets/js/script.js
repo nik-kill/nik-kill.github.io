@@ -60,16 +60,36 @@ function rule(particles1, particles2, g){
 
 yellow = create(500, "yellow");
 red = create(500, "red");
-green = create(500, "blue");
+blue = create(500, "blue");
 
 function update(){
-    rule(green, green, -0.32);
-    rule(green, red, -0.17);
-    rule(green, yellow, 0.34);
-    rule(red, red, -0.10);
-    rule(red, green, -0.34);
-    rule(yellow, yellow, 0.15);
-    rule(yellow, green, -0.20);
+    red_red = document.getElementById("red_redSlider").value;
+    yellow_yellow = document.getElementById("yellow_yellowSlider").value;
+    blue_blue = document.getElementById("blue_blueSlider").value;
+    red_yellow = document.getElementById("red_yellowSlider").value;
+    red_blue = document.getElementById("red_blueSlider").value;
+    yellow_blue = document.getElementById("yellow_blueSlider").value;
+    yellow_red = document.getElementById("yellow_redSlider").value;
+    blue_red = document.getElementById("blue_redSlider").value;
+    blue_yellow = document.getElementById("blue_yellowSlider").value;
+    
+    rule(red, red, red_red);
+    rule(yellow, yellow, yellow_yellow);
+    rule(blue, blue, blue_blue);
+    rule(red, yellow, red_yellow);
+    rule(red, blue, red_blue);
+    rule(yellow, blue, yellow_blue);
+    rule(yellow, red, yellow_red);
+    rule(blue, red, blue_red);
+    rule(blue, yellow, blue_yellow);
+
+    // rule(blue, blue, -0.32);
+    // rule(blue, red, -0.17);
+    // rule(blue, yellow, 0.34);
+    // rule(red, red, -0.10);
+    // rule(red, blue, -0.34);
+    // rule(yellow, yellow, 0.15);
+    // rule(yellow, blue, -0.20);
 
     // rule(red, red, -0.51)
     // rule(red, yellow, -0.15)
