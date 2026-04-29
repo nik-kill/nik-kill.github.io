@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <title>Nikhil</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/icons/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+</head>
+<body  text="silver">
+    <canvas id="life"></canvas>    
+    <div id="main">
+        
+        <div id="home">
+            <div id="intro">
+                <img src="assets/me.jpg"  height="300px" style="border-radius: 50%; border: solid; float: left; margin:30px;">
+                <h2>Hi, I'm Nikhil.</h2>
+<!--                 <div class="skills">
+                    <button class="aim_button">Chess</button>
+                    <button class="aim_button">Football</button>
+                    <button class="aim_button">Counter Strike</button>
+                </div> -->
+            </div>
+
+            <div class="forceSlider">
+                <h3>Inter-Particle Forces<hr> </h3>
+                <div class="forceConst">
+                    <p style="width: 100px;" >Red-Red</p>
+                    <input type="range" min="-1" max="1" value="-0.10" step="0.01" class="myslider" id="red_redSlider">
+                </div>
+                <div class="forceConst">
+                    <p style="width: 100px;" >Yellow-Yellow</p>
+                    <input type="range" min="-1" max="1" value="0.15" step="0.01" class="myslider" id="yellow_yellowSlider">
+                </div>
+                <div class="forceConst">
+                    <p style="width: 100px;" >Blue-Blue</p>
+                    <input type="range" min="-1" max="1" value="-0.32" step="0.01" class="myslider" id="blue_blueSlider">
+                </div>
+                <div class="forceConst">
+                    <p style="width: 100px;" >Red-Yellow</p>
+                    <input type="range" min="-1" max="1" value="0.00" step="0.01" class="myslider" id="red_yellowSlider">
+                </div>
+                <div class="forceConst">
+                    <p style="width: 100px;" >Red-Blue</p>
+                    <input type="range" min="-1" max="1" value="-0.34" step="0.01" class="myslider" id="red_blueSlider">
+                </div>
+                <div class="forceConst">
+                    <p style="width: 100px;" >Yellow-Blue</p>
+                    <input type="range" min="-1" max="1" value="-0.20" step="0.01" class="myslider" id="yellow_blueSlider">
+                </div>
+                <div class="forceConst">
+                    <p style="width: 100px;" >Yellow-Red</p>
+                    <input type="range" min="-1" max="1" value="0.00" step="0.01" class="myslider" id="yellow_redSlider">
+                </div>
+                <div class="forceConst">
+                    <p style="width: 100px;" >Blue-Red</p>
+                    <input type="range" min="-1" max="1" value="-0.17" step="0.01" class="myslider" id="blue_redSlider">
+                </div>
+                <div class="forceConst">
+                    <p style="width: 100px;" >Blue-Yellow</p>
+                    <input type="range" min="-1" max="1" value="0.34" step="0.01" class="myslider" id="blue_yellowSlider">
+                </div>
+            </div>            
+        </div>
+        <div id="contact">
+            <!-- <h3>Connect @</h3> -->
+            <div class="contactLinks">
+                <a href="https://github.com/nik-kill" target="_blank" rel="noopener noreferrer"><img
+                        src="assets/icons/github.jpg" height="46px" width="115px"></a>
+                <a href="https://www.linkedin.com/in/nik-kill" target="_blank" rel="noopener noreferrer"><img
+                        src="assets/icons/linkedin.png" height="50px" width="50px"></a>
+                <a href="https://www.hackerrank.com/nik_kill" target="_blank" rel="noopener noreferrer"><img
+                        src="assets/icons/hackerrank.jpg" height="50px" width="50px"></a>
+                <a href="https://leetcode.com/nik_kill/" target="_blank" rel="noopener noreferrer"><img
+                        src="assets/icons/leetcode.png" height="50px" width="50px"></a>
+                <a href="https://www.codechef.com/users/mr_j0ker" target="_blank" rel="noopener noreferrer"><img
+                        src="assets/icons/codechef.png" height="50px" width="50px"></a>
+        
+            </div>
+        </div>
+        <div id="hobbies">
+            <!-- <h3> @</h3> -->
+            <a href="https://www.chess.com/member/nikkkss" target="_blank" rel="noopener noreferrer">
+                <img src="assets/icons/chess.png" height="50px" >
+            </a>
+            <a href="https://lichess.org/@/n1kill" target="_blank" rel="noopener noreferrer">
+                <img src="assets/icons/lichess.png" height="50px">
+            </a>
+            
+        </div>
+    </div>
+
+    <div class="openbtn" onclick="menuAnimate(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    
+    <div id="mySidepanel" class="sidepanel">
+        <a href="#home" onclick="displayH1('Home')"><img src="assets/icons/hi.jpg" height="50px" width="50px"></a>
+        <a href="#about" onclick="displayH1('Who am I ?')"><img src="assets/icons/about.png" height="50px" width="50px"></a>
+        <a href="projects/projects.html" onclick="displayH1('What do i do ?')"><img src="assets/icons/work.png" height="50px"
+                width="50px"></a>
+        <a href="#contact" onclick="displayH1('Connect @')"><img src="assets/icons/contact.jpg" height="50px"
+                width="50px"></a>
+        <a href="#hobbies" onclick="displayH1('Gaming @')"><img src="assets/icons/console.jpg" height="50px"
+                width="50px"></a>
+    </div>
+    <div class="top-bar">
+        <h1 id="welcome_text"></h1>
+        <a id="resume" href="projects/projects.html" target="_blank" rel="noopener noreferrer">Projects</a>    
+    </div>
+
+    <div class="openbtnRight" onclick="menuAnimateRight(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    
+    <div id="mySidepanelRight" class="sidepanelRight">
+        <a href="https://x4meme.netlify.app/" target="_blank" rel="noopener noreferrer"><img src="assets/images/mySites/x4meme.ico" height="50px" width="50px"></a>
+        
+    </div>
+    
+    
+</body>
+</html>

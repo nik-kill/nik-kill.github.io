@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+:root {
+  --font-main: 'Inter', sans-serif;
+  --bg-dark: #121212;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: blur(10px);
+  --text-primary: #ffffff;
+  --text-secondary: #aaaaaa;
+  --accent: #ff4757;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-primary);
+  background-color: var(--bg-dark);
+  overflow-x: hidden;
+  /* Allow vertical scrolling now! */
+  overflow-y: auto;
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Top Bar */
+.top-bar {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 30px;
+  border-radius: 30px;
+  z-index: 100;
+  min-width: 200px;
+  text-align: center;
+}
+
+.top-bar h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Navigation Menu */
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+.menu-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.side-panel {
+  position: fixed;
+  top: 70px;
+  left: -250px;
+  width: 200px;
+  height: auto;
+  border-radius: 0 20px 20px 0;
+  padding: 20px 0;
+  z-index: 999;
+  transition: left 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.side-panel.open {
+  left: 0;
+}
+
+.side-panel a {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 600;
+  transition: color 0.3s ease, background 0.3s ease;
+  gap: 15px;
+}
+
+.side-panel a:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Main Content Layout */
+.main-content {
+  padding-top: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding-bottom: 100px;
+}
+
+.section-container {
+  padding: 40px;
+  border-radius: 20px;
+  margin: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 800;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 30px;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  min-height: 60vh;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--glass-border);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.intro-text h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+/* Force Sliders */
+.force-section {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 15px;
+  min-width: 300px;
+}
+
+.force-section h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.force-sliders {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.force-const {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.force-const p {
+  width: 100px;
+  color: var(--text-secondary);
+}
+
+.myslider {
+  flex: 1;
+  margin: 0 10px;
+  cursor: pointer;
+  accent-color: var(--accent);
+}
+
+.slider-val {
+  width: 40px;
+  text-align: right;
+  font-family: monospace;
+}
+
+/* Projects Section */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+}
+
+.project-image-container {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image-container img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.project-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Contact & Hobbies Links */
+.contact-links, .hobbies-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contact-links a img, .hobbies-links a img {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(20%);
+}
+
+.contact-links a:hover img, .hobbies-links a:hover img {
+  transform: translateY(-5px) scale(1.1);
+  filter: grayscale(0%);
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none;
+  }
+  
+  .intro-text h2 {
+    font-size: 2.2rem;
+  }
+  
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .section-container {
+    padding: 20px;
+  }
+  
+  .top-bar {
+    left: auto;
+    right: 10px;
+    transform: none;
+  }
+}
