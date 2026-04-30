@@ -397,58 +397,108 @@ h1, h2, h3 {
 }
 
 .project-card {
-  padding: 35px 25px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
+  padding: 0;
   position: relative;
   overflow: hidden;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.project-card::after {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: radial-gradient(circle at 50% 0%, rgba(255,255,255,0.1), transparent 70%);
-  pointer-events: none;
-}
-
-.project-card h3 {
-  font-size: 1.6rem;
-  color: var(--text-primary);
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  border-color: var(--accent);
 }
 
 .project-image-container {
-  height: 140px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 200px;
   width: 100%;
-  border-radius: 12px;
-  background: rgba(0,0,0,0.2);
-  padding: 10px;
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover .project-image-container {
-  transform: scale(1.05);
+  overflow: hidden;
+  background: #1a1a24;
 }
 
 .project-image-container img {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-  border-radius: 8px;
-  filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.project-card p {
-  color: var(--text-secondary);
-  font-size: 1rem;
-  line-height: 1.6;
+.project-card:hover .project-image-container img {
+  transform: scale(1.1);
 }
+
+.project-content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: left;
+}
+
+.project-content h3 {
+  font-size: 1.6rem;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.project-content p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.tech-tag {
+  background: rgba(0, 240, 255, 0.1);
+  color: var(--accent);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s ease;
+}
+
+.btn-icon:hover {
+  background: var(--accent);
+  color: #000;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
 
 /* Find Me Online Section */
 .split-section {
