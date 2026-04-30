@@ -44,12 +44,6 @@ function App() {
             </div>
             <div className="intro-text" style={{ marginTop: '30px' }}>
               <h2>Hi, I'm Nikhil!</h2>
-              <p style={{ color: 'var(--text-secondary)', marginTop: '15px', maxWidth: '400px', lineHeight: '1.6', fontSize: '1.1rem' }}>
-                A passionate Software Engineer who loves building scalable web applications and engaging user experiences. Constantly exploring new technologies and solving complex problems.
-              </p>
-              <button onClick={() => setIsResumeOpen(true)} className="resume-btn" style={{ cursor: 'pointer' }}>
-                <FaDownload /> Resume
-              </button>
             </div>
           </div>
           <div className="force-section hidden-mobile">
@@ -59,8 +53,18 @@ function App() {
           </div>
         </section>
 
-        <section id="projects" className="section-container">
-          <h2 className="section-title">Projects</h2>
+        <section id="portfolio" className="section-container">
+          <h2 className="section-title">Engineering Portfolio</h2>
+          
+          <div className="glass-panel" style={{ textAlign: 'center', maxWidth: '850px', margin: '0 auto 60px auto', padding: '40px 30px' }}>
+            <p style={{ color: 'var(--text-secondary)', margin: '0 auto 25px auto', lineHeight: '1.8', fontSize: '1.15rem' }}>
+              A passionate Software Engineer who bridges the gap between design and deep technical execution. I specialize in building scalable applications, with a continuous drive to explore emerging technologies and architect elegant solutions.
+            </p>
+            <button onClick={() => setIsResumeOpen(true)} className="resume-btn" style={{ cursor: 'pointer', margin: '0' }}>
+              <FaDownload /> View Resume
+            </button>
+          </div>
+
           <ProjectList />
         </section>
 
