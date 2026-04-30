@@ -46,10 +46,12 @@ function App() {
       <main className="main-content">
         <section id="home" className="section-container glass-panel">
           <div className="intro-section">
-            <img src="/assets/me.jpg" alt="Nikhil" className="profile-img" />
             <div className="intro-text">
               <h2>Hi, I'm Nikhil.</h2>
-              <div className="keyword-tags">
+            </div>
+            <div className="profile-container">
+              <img src="/assets/me.jpg" alt="Nikhil" className="profile-img" />
+              <div className="floating-tags">
                 <span className="tag">Tech Enthusiast</span>
                 <span className="tag">Traveler</span>
                 <span className="tag">Developer</span>
