@@ -49,7 +49,10 @@ function App() {
             <img src="/assets/me.jpg" alt="Nikhil" className="profile-img" />
             <div className="intro-text">
               <h2>Hi, I'm Nikhil.</h2>
-              <p>Welcome to my interactive portfolio.</p>
+              <p>Backend Engineer with 3 years of experience designing and optimizing software solutions for high-stakes financial systems.
+              Specialized in Java microservices, Kafka event-driven architectures, and distributed databases. Proven track record of
+              architecting production-grade systems that safeguard multi-million pound assets and automate complex data pipelines. Adept
+              at performance optimization and cross-functional collaboration, leveraging modern</p>
             </div>
           </div>
           <div className="force-section hidden-mobile">
