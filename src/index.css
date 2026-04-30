@@ -282,12 +282,35 @@ h1, h2, h3 {
   -webkit-text-fill-color: transparent;
 }
 
-.intro-text p {
-  color: var(--text-secondary);
-  font-size: 1.15rem;
-  line-height: 1.8;
+.keyword-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
   max-width: 600px;
   margin: 0 auto;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.tag:hover {
+  transform: translateY(-3px);
+  color: var(--text-primary);
+  border-color: var(--accent);
+  box-shadow: 0 6px 20px var(--accent-glow);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* Force Sliders */
