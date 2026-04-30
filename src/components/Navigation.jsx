@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes, FaHome, FaUser, FaBriefcase, FaEnvelope, FaGamepad } from 'react-icons/fa';
+import { FaBars, FaTimes, FaHome, FaBriefcase, FaNetworkWired } from 'react-icons/fa';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,11 +23,8 @@ const Navigation = () => {
         <a href="#projects" onClick={handleNavClick}>
           <FaBriefcase size={24} /> <span>Projects</span>
         </a>
-        <a href="#contact" onClick={handleNavClick}>
-          <FaEnvelope size={24} /> <span>Contact</span>
-        </a>
-        <a href="#hobbies" onClick={handleNavClick}>
-          <FaGamepad size={24} /> <span>Hobbies</span>
+        <a href="#connect" onClick={handleNavClick}>
+          <FaNetworkWired size={24} /> <span>Connect</span>
         </a>
       </div>
     </>

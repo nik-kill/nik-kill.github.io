@@ -4,7 +4,7 @@ import ProjectList from './components/ProjectList';
 import Navigation from './components/Navigation';
 import ForceSliders from './components/ForceSliders';
 import './App.css';
-import { FaGithub, FaLinkedin, FaHackerrank } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaHackerrank, FaDownload, FaTimes } from 'react-icons/fa';
 import { SiLeetcode, SiCodechef, SiChessdotcom, SiLichess } from 'react-icons/si';
 
 function App() {
@@ -19,6 +19,8 @@ function App() {
     blue_red: -0.17,
     blue_yellow: 0.34
   });
+  
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
 
 
 
@@ -42,6 +44,12 @@ function App() {
             </div>
             <div className="intro-text" style={{ marginTop: '30px' }}>
               <h2>Hi, I'm Nikhil!</h2>
+              <p style={{ color: 'var(--text-secondary)', marginTop: '15px', maxWidth: '400px', lineHeight: '1.6', fontSize: '1.1rem' }}>
+                A passionate Software Engineer who loves building scalable web applications and engaging user experiences. Constantly exploring new technologies and solving complex problems.
+              </p>
+              <button onClick={() => setIsResumeOpen(true)} className="resume-btn" style={{ cursor: 'pointer' }}>
+                <FaDownload /> Resume
+              </button>
             </div>
           </div>
           <div className="force-section hidden-mobile">
@@ -52,7 +60,7 @@ function App() {
         </section>
 
         <section id="projects" className="section-container">
-          <h2 className="section-title glass-panel">Projects</h2>
+          <h2 className="section-title">Projects</h2>
           <ProjectList />
         </section>
 
@@ -94,6 +102,27 @@ function App() {
           </div>
         </section>
       </main>
+
+      <footer className="site-footer">
+        <p>Designed & Built by Nikhil © 2026</p>
+      </footer>
+
+      {isResumeOpen && (
+        <div className="resume-modal-overlay" onClick={() => setIsResumeOpen(false)}>
+          <div className="resume-modal-content glass-panel" onClick={(e) => e.stopPropagation()}>
+            <button className="close-modal-btn" onClick={() => setIsResumeOpen(false)}>
+              <FaTimes size={24} />
+            </button>
+            <iframe 
+              src="https://drive.google.com/file/d/1Nxr9niDAgPUsWBcCzfRdxqD3Hd2Fwu5Y/preview" 
+              width="100%" 
+              height="100%" 
+              allow="autoplay"
+              title="Resume Preview"
+            ></iframe>
+          </div>
+        </div>
+      )}
     </>
   );
 }
