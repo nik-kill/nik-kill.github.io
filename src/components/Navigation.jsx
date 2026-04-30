@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes, FaHome, FaUser, FaBriefcase, FaEnvelope, FaGamepad } from 'react-icons/fa';
 
-const Navigation = ({ setWelcomeText }) => {
+const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const handleNavClick = (text) => {
-    setWelcomeText(text);
+  const handleNavClick = () => {
     setIsOpen(false);
   };
 
@@ -18,16 +17,16 @@ const Navigation = ({ setWelcomeText }) => {
       </div>
 
       <div className={`side-panel glass-panel ${isOpen ? 'open' : ''}`}>
-        <a href="#home" onClick={() => handleNavClick('Home')}>
+        <a href="#home" onClick={handleNavClick}>
           <FaHome size={24} /> <span>Home</span>
         </a>
-        <a href="#projects" onClick={() => handleNavClick('What do I do?')}>
+        <a href="#projects" onClick={handleNavClick}>
           <FaBriefcase size={24} /> <span>Projects</span>
         </a>
-        <a href="#contact" onClick={() => handleNavClick('Connect @')}>
+        <a href="#contact" onClick={handleNavClick}>
           <FaEnvelope size={24} /> <span>Contact</span>
         </a>
-        <a href="#hobbies" onClick={() => handleNavClick('Gaming @')}>
+        <a href="#hobbies" onClick={handleNavClick}>
           <FaGamepad size={24} /> <span>Hobbies</span>
         </a>
       </div>

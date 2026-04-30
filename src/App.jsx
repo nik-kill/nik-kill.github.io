@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import ParticleBackground from './components/ParticleBackground';
 import ProjectList from './components/ProjectList';
 import Navigation from './components/Navigation';
@@ -18,30 +18,13 @@ function App() {
     blue_yellow: 0.34
   });
 
-  const [welcomeText, setWelcomeText] = useState("");
-  const fullText = "Heyy there!";
 
-  useEffect(() => {
-    let i = 0;
-    const typeWriter = () => {
-      if (i < fullText.length) {
-        setWelcomeText(prev => prev + fullText.charAt(i));
-        i++;
-        setTimeout(typeWriter, 100);
-      }
-    };
-    typeWriter();
-  }, []);
 
   return (
     <>
       <ParticleBackground forces={forces} />
       
-      <Navigation setWelcomeText={setWelcomeText} />
-
-      <div className="top-bar glass-panel">
-        <h1 id="welcome_text">{welcomeText}</h1>
-      </div>
+      <Navigation />
 
       <main className="main-content">
         <section id="home" className="section-container glass-panel">
