@@ -205,7 +205,8 @@ h1, h2, h3 {
 /* Main Content Layout */
 .main-content {
   padding-top: 120px;
-  max-width: 1200px;
+  max-width: 1600px;
+  width: 95%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -214,9 +215,8 @@ h1, h2, h3 {
 }
 
 .section-container {
-  padding: 60px;
+  padding: 50px;
   border-radius: 30px;
-  margin: 0 20px;
 }
 
 .section-title {

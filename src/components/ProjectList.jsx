@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'xMeme',
     image: '/projects/images/x4meme.ico',
-    description: 'A full-stack web application to share, view, and interact with memes.',
+    description: 'A fully responsive MERN stack web application enabling users to seamlessly share, explore, and interact with a global feed of memes.',
     tags: ['MongoDB', 'Express', 'React', 'Node.js'],
     githubUrl: 'https://github.com/nik-kill/xMeme',
     liveUrl: '#'
@@ -13,7 +13,7 @@ const projects = [
   {
     title: 'Expense Sheet',
     image: '/projects/images/expense.png',
-    description: 'An Android application designed to keep track of daily transactions efficiently.',
+    description: 'A native Android application featuring an intuitive UI to efficiently track, manage, and analyze daily financial transactions.',
     tags: ['Java', 'Android SDK', 'XML'],
     githubUrl: 'https://github.com/nik-kill/AndroidProjects',
     liveUrl: '#'
@@ -21,7 +21,7 @@ const projects = [
   {
     title: 'Vax-Man',
     image: '/projects/images/vaxman.png',
-    description: 'A COVID-19 variant of the classic PacMan game.',
+    description: 'A C++ reimagining of the classic PacMan arcade game, featuring custom collision mechanics and a COVID-19 thematic twist.',
     tags: ['Game Dev', 'C++'],
     githubUrl: 'https://github.com/nik-kill/Vax-man',
     liveUrl: '#'
@@ -29,7 +29,7 @@ const projects = [
   {
     title: 'Side Runner',
     image: '/projects/images/runner.png',
-    description: 'An endless side-scrolling runner game with dynamic obstacles.',
+    description: 'A fast-paced, endless side-scrolling game built in Unreal Engine, featuring procedural obstacle generation and dynamic physics.',
     tags: ['Unreal Engine', 'C++'],
     githubUrl: 'https://github.com/nik-kill/SideRunner',
     liveUrl: '#'
@@ -37,7 +37,7 @@ const projects = [
   {
     title: 'Inventory App',
     image: '/projects/images/inventory.png',
-    description: 'A robust inventory management application to record and track product details.',
+    description: 'A robust Android inventory management system utilizing a local SQLite database for real-time tracking of product details and stock levels.',
     tags: ['Java', 'SQLite'],
     githubUrl: 'https://github.com/nik-kill/AndroidProjects',
     liveUrl: '#'
@@ -45,7 +45,7 @@ const projects = [
   {
     title: 'chatApp',
     image: '/projects/images/chatApp.png',
-    description: 'A terminal-based chat application supporting multiple clients using socket programming and multi-threading.',
+    description: 'A high-performance terminal chat application architected with C++ socket programming and multi-threading to support concurrent client connections.',
     tags: ['C++', 'Sockets', 'Multi-threading'],
     githubUrl: 'https://github.com/nik-kill/chatApp',
     liveUrl: '#'
@@ -53,7 +53,7 @@ const projects = [
   {
     title: 'Hand Tracking',
     image: '/projects/images/handTrack.png',
-    description: 'A computer vision module that detects and tracks hand gestures using landmarks via webcam.',
+    description: 'A real-time computer vision module leveraging OpenCV and MediaPipe to detect, track, and map complex hand gestures via webcam.',
     tags: ['Python', 'OpenCV', 'MediaPipe'],
     githubUrl: 'https://github.com/nik-kill/HandTracking',
     liveUrl: '#'
