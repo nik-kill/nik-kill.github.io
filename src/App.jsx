@@ -29,9 +29,6 @@ function App() {
       <main className="main-content">
         <section id="home" className="section-container glass-panel">
           <div className="intro-section">
-            <div className="intro-text">
-              <h2>Hi, I'm Nikhil.</h2>
-            </div>
             <div className="profile-container">
               <img src="/assets/me.jpg" alt="Nikhil" className="profile-img" />
               <div className="floating-tags">
@@ -40,6 +37,9 @@ function App() {
                 <span className="tag">Developer</span>
                 <span className="tag">Gamer</span>
               </div>
+            </div>
+            <div className="intro-text" style={{ marginTop: '30px' }}>
+              <h2>Hi, I'm Nikhil!</h2>
             </div>
           </div>
           <div className="force-section hidden-mobile">
