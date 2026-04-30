@@ -403,34 +403,40 @@ h1, h2, h3 {
 
 /* Projects Section */
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 340px;
   padding: 0;
   position: relative;
   overflow: hidden;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--glass-border);
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-  border-color: var(--accent);
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 240, 255, 0.4);
 }
 
 .project-image-container {
-  height: 180px;
+  height: 160px;
   width: 100%;
   overflow: hidden;
-  background: #1a1a24;
+  background: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .project-image-container img {
@@ -438,14 +444,16 @@ h1, h2, h3 {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+  opacity: 0.85;
 }
 
 .project-card:hover .project-image-container img {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  opacity: 1;
 }
 
 .project-content {
-  padding: 20px;
+  padding: 18px 20px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -453,15 +461,15 @@ h1, h2, h3 {
 }
 
 .project-content h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--text-primary);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-weight: 700;
 }
 
 .project-content p {
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.5;
   margin-bottom: 15px;
   flex: 1;
@@ -471,7 +479,7 @@ h1, h2, h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .tech-tag {
