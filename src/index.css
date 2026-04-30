@@ -220,20 +220,14 @@ h1, h2, h3 {
 }
 
 .section-title {
+  display: block;
   text-align: center;
-  font-size: 3rem;
-  margin-bottom: 50px;
+  font-size: 2.8rem;
+  margin: 0 auto 40px auto;
   font-weight: 800;
-  display: inline-block;
-  padding: 15px 50px;
-  border-radius: 40px;
-  left: 50%;
-  position: relative;
-  transform: translateX(-50%);
   background: linear-gradient(to right, var(--accent), var(--accent-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 1px solid var(--glass-border);
 }
 
 /* Home Section */
@@ -265,7 +259,7 @@ h1, h2, h3 {
 
 .profile-img {
   width: 100%;
-  max-width: 320px;
+  max-width: 400px;
   height: auto;
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -456,36 +450,72 @@ h1, h2, h3 {
   line-height: 1.6;
 }
 
-/* Contact & Hobbies Links */
-.contact-links, .hobbies-links {
+/* Find Me Online Section */
+.split-section {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
-.contact-links a, .hobbies-links a {
-  display: block;
-  position: relative;
+.split-col {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contact-links a img, .hobbies-links a img {
-  width: 70px;
-  height: 70px;
-  border-radius: 20px;
+.split-divider {
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--glass-border), transparent);
+  margin: 20px 0;
+}
+
+.glass-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
+}
+
+.glass-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-weight: 600;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  filter: grayscale(100%) opacity(0.7);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.contact-links a:hover img, .hobbies-links a:hover img {
-  transform: translateY(-10px) scale(1.15) rotate(5deg);
-  filter: grayscale(0%) opacity(1);
-  box-shadow: 0 15px 30px var(--accent-glow);
+.glass-pill span {
+  font-size: 0.95rem;
+}
+
+.glass-pill:hover {
+  transform: translateY(-5px) scale(1.05);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--accent);
+  box-shadow: 0 10px 25px var(--accent-glow);
 }
 
 /* Media Queries for Mobile */
 @media (max-width: 768px) {
+  .split-divider {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--glass-border), transparent);
+  }
+
   .hidden-mobile {
     display: none;
   }
