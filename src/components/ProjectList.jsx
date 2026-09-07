@@ -11,6 +11,14 @@ const projects = [
     liveUrl: '#'
   },
   {
+    title: 'ScrapeMatrix',
+    image: '/projects/images/scrapematrix.png',
+    description: 'An industrial-grade stock analysis desktop application featuring real-time market data streaming, interactive Matplotlib financial charts, and smart ticker autocomplete.',
+    tags: ['Python', 'PyQt6', 'yfinance', 'Pandas', 'Matplotlib'],
+    githubUrl: 'https://github.com/nik-kill/ScrapeMatrix',
+    liveUrl: '#'
+  },
+  {
     title: 'Expense Sheet',
     image: '/projects/images/expense.png',
     description: 'A native Android application featuring an intuitive UI to efficiently track, manage, and analyze daily financial transactions.',
@@ -56,6 +64,14 @@ const projects = [
     description: 'A real-time computer vision module leveraging OpenCV and MediaPipe to detect, track, and map complex hand gestures via webcam.',
     tags: ['Python', 'OpenCV', 'MediaPipe'],
     githubUrl: 'https://github.com/nik-kill/HandTracking',
+    liveUrl: '#'
+  },
+  {
+    title: 'U-pad',
+    image: '/projects/images/upad.png',
+    description: 'A responsive multi-purpose web sketchpad leveraging HTML5 Canvas and JavaScript for real-time freehand drawing and digital note-taking.',
+    tags: ['JavaScript', 'HTML5 Canvas', 'CSS3'],
+    githubUrl: 'https://github.com/nik-kill/U-pad',
     liveUrl: '#'
   }
 ];
